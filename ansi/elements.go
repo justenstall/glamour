@@ -7,7 +7,6 @@ import (
 	"io"
 	"strings"
 
-	east "github.com/yuin/goldmark-emoji/ast"
 	"github.com/yuin/goldmark/ast"
 	astext "github.com/yuin/goldmark/extension/ast"
 )
@@ -386,13 +385,13 @@ func (tr *ANSIRenderer) NewElement(node ast.Node, source []byte) Element {
 	case ast.KindTextBlock:
 		return Element{}
 
-	case east.KindEmoji:
-		n := node.(*east.Emoji)
-		return Element{
-			Renderer: &BaseElement{
-				Token: string(n.Value.Unicode),
-			},
-		}
+	// case east.KindEmoji:
+	// 	n := node.(*east.Emoji)
+	// 	return Element{
+	// 		Renderer: &BaseElement{
+	// 			Token: string(n.Value.Unicode),
+	// 		},
+	// 	}
 
 	// Unknown case
 	default:

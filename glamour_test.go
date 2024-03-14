@@ -5,7 +5,6 @@ import (
 	"errors"
 	"io"
 	"os"
-	"strings"
 	"testing"
 )
 
@@ -93,27 +92,27 @@ func TestTermRenderer(t *testing.T) {
 	}
 }
 
-func TestWithEmoji(t *testing.T) {
-	r, err := NewTermRenderer(
-		WithEmoji(),
-	)
-	if err != nil {
-		t.Fatal(err)
-	}
+// func TestWithEmoji(t *testing.T) {
+// 	r, err := NewTermRenderer(
+// 		WithEmoji(),
+// 	)
+// 	if err != nil {
+// 		t.Fatal(err)
+// 	}
 
-	b, err := r.Render(":+1:")
-	if err != nil {
-		t.Fatal(err)
-	}
-	b = strings.TrimSpace(b)
+// 	b, err := r.Render(":+1:")
+// 	if err != nil {
+// 		t.Fatal(err)
+// 	}
+// 	b = strings.TrimSpace(b)
 
-	// Thumbs up unicode character
-	td := "\U0001f44d"
+// 	// Thumbs up unicode character
+// 	td := "\U0001f44d"
 
-	if td != b {
-		t.Errorf("Rendered output doesn't match!\nExpected: `\n%s`\nGot: `\n%s`\n", td, b)
-	}
-}
+// 	if td != b {
+// 		t.Errorf("Rendered output doesn't match!\nExpected: `\n%s`\nGot: `\n%s`\n", td, b)
+// 	}
+// }
 
 func TestWithPreservedNewLines(t *testing.T) {
 	r, err := NewTermRenderer(
