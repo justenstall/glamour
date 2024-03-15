@@ -6,7 +6,6 @@ import (
 	"strings"
 
 	"github.com/muesli/termenv"
-	// east "github.com/yuin/goldmark-emoji/ast"
 	"github.com/yuin/goldmark/ast"
 	astext "github.com/yuin/goldmark/extension/ast"
 	"github.com/yuin/goldmark/renderer"
