@@ -1,15 +1,14 @@
-# Glamour
+# Glamour-slim
 
-<!-- markdownlint-disable no-inline-html -->
-<p>
-    <img src="https://stuff.charm.sh/glamour/glamour-github-header.png" width="245" alt="Glamour Title Treatment"><br>
-    <a href="https://github.com/charmbracelet/glamour/releases"><img src="https://img.shields.io/github/release/charmbracelet/glamour.svg" alt="Latest Release"></a>
-    <a href="https://pkg.go.dev/github.com/charmbracelet/glamour?tab=doc"><img src="https://godoc.org/github.com/golang/gddo?status.svg" alt="GoDoc"></a>
-    <a href="https://github.com/charmbracelet/glamour/actions"><img src="https://github.com/charmbracelet/glamour/workflows/build/badge.svg" alt="Build Status"></a>
-    <a href="https://coveralls.io/github/charmbracelet/glamour?branch=master"><img src="https://coveralls.io/repos/github/charmbracelet/glamour/badge.svg?branch=master" alt="Coverage Status"></a>
-    <a href="https://goreportcard.com/report/charmbracelet/glamour"><img src="https://goreportcard.com/badge/charmbracelet/glamour" alt="Go ReportCard"></a>
-</p>
-<!-- markdownlint-enable no-inline-html -->
+> [!NOTE]
+>
+> This is a permanent fork of [`charmbracelet/glamour`](https://github.com/charmbracelet/glamour) removing its 14MB dependency on [`yuin/goldmark-emoji`](https://github.com/yuin/goldmark-emoji).
+>
+> If your project has an indirect dependency on `charmbracelet/glamour`, you can decrease its size by adding the following to your `go.mod`:
+>
+> ```plaintext
+> replace github.com/charmbracelet/glamour => github.com/justenstall/glamour-slim v0.0.0
+> ```
 
 Stylesheet-based markdown rendering for your CLI apps.
 
