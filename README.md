@@ -1,5 +1,6 @@
 # Glamour
 
+<!-- markdownlint-disable no-inline-html -->
 <p>
     <img src="https://stuff.charm.sh/glamour/glamour-github-header.png" width="245" alt="Glamour Title Treatment"><br>
     <a href="https://github.com/charmbracelet/glamour/releases"><img src="https://img.shields.io/github/release/charmbracelet/glamour.svg" alt="Latest Release"></a>
@@ -8,6 +9,7 @@
     <a href="https://coveralls.io/github/charmbracelet/glamour?branch=master"><img src="https://coveralls.io/repos/github/charmbracelet/glamour/badge.svg?branch=master" alt="Coverage Status"></a>
     <a href="https://goreportcard.com/report/charmbracelet/glamour"><img src="https://goreportcard.com/badge/charmbracelet/glamour" alt="Go ReportCard"></a>
 </p>
+<!-- markdownlint-enable no-inline-html -->
 
 Stylesheet-based markdown rendering for your CLI apps.
 
@@ -35,6 +37,7 @@ out, err := glamour.Render(in, "dark")
 fmt.Print(out)
 ```
 
+<!-- markdownlint-disable-next-line no-inline-html -->
 <img src="https://github.com/charmbracelet/glamour/raw/master/examples/helloworld/helloworld.png" width="600" alt="Hello World example">
 
 ### Custom Renderer
@@ -59,6 +62,7 @@ You can find all available default styles in our [gallery](https://github.com/ch
 Want to create your own style? [Learn how!](https://github.com/charmbracelet/glamour/tree/master/styles)
 
 There are a few options for using a custom style:
+
 1. Call `glamour.Render(inputText, "desiredStyle")`
 1. Set the `GLAMOUR_STYLE` environment variable to your desired default style or a file location for a style and call `glamour.RenderWithEnvironmentConfig(inputText)`
 1. Set the `GLAMOUR_STYLE` environment variable and pass `glamour.WithEnvironmentConfig()` to your custom renderer
@@ -66,6 +70,7 @@ There are a few options for using a custom style:
 ## Glamourous Projects
 
 Check out these projects, which use `glamour`:
+
 - [Glow](https://github.com/charmbracelet/glow), a markdown renderer for
 the command-line.
 - [GitHub CLI](https://github.com/cli/cli), GitHub’s official command line tool.
@@ -77,9 +82,9 @@ the command-line.
 
 We’d love to hear your thoughts on this project. Feel free to drop us a note!
 
-* [Twitter](https://twitter.com/charmcli)
-* [The Fediverse](https://mastodon.social/@charmcli)
-* [Discord](https://charm.sh/chat)
+- [Twitter](https://twitter.com/charmcli)
+- [The Fediverse](https://mastodon.social/@charmcli)
+- [Discord](https://charm.sh/chat)
 
 ## License
 
@@ -89,6 +94,7 @@ We’d love to hear your thoughts on this project. Feel free to drop us a note!
 
 Part of [Charm](https://charm.sh).
 
+<!-- markdownlint-disable-next-line no-inline-html -->
 <a href="https://charm.sh/"><img alt="The Charm logo" src="https://stuff.charm.sh/charm-badge.jpg" width="400"></a>
 
 Charm热爱开源 • Charm loves open source
