@@ -9,6 +9,15 @@
 > ```plaintext
 > replace github.com/charmbracelet/glamour => github.com/justenstall/glamour-slim v0.0.0
 > ```
+>
+> Binary size comparison using the [`gh` cli](https://github.com/cli/cli):
+>
+> ```plaintext
+> ls -lh bin/
+> total 178744
+> -rwxr-xr-x  1 jstall  staff    53M Mar 15 12:50 gh-glamour
+> -rwxr-xr-x  1 jstall  staff    34M Mar 15 12:49 gh-glamour-slim
+> ```
 
 Stylesheet-based markdown rendering for your CLI apps.
 
