@@ -21,7 +21,7 @@ the stylish defaults.
 ## Usage
 
 ```go
-import "github.com/charmbracelet/glamour"
+import "github.com/justenstall/glamour-slim"
 
 in := `# Hello World
 
@@ -40,7 +40,7 @@ fmt.Print(out)
 ### Custom Renderer
 
 ```go
-import "github.com/charmbracelet/glamour"
+import "github.com/justenstall/glamour-slim"
 
 r, _ := glamour.NewTermRenderer(
     // detect background color and pick either the default dark or light theme

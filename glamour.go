@@ -15,7 +15,7 @@ import (
 	"github.com/yuin/goldmark/renderer"
 	"github.com/yuin/goldmark/util"
 
-	"github.com/charmbracelet/glamour/ansi"
+	"github.com/justenstall/glamour-slim/ansi"
 )
 
 // Default styles.
